@@ -1,0 +1,45 @@
+@media screen and (max-width:767px) {
+  .datails-list {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+}
+}
+
+  .datails-list {
+    &__pic {
+      background-color: #f5f4fa;
+      height: 120px;
+      display: flex;
+      border-radius: 4px;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    &__tittle {
+      text-align: center;
+      font-size: inherit;
+      color: var(--title-text-color);
+      line-height: 1.14;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (min-width:768px){
+    .datails-list {
+      --card-list: 2;
+  
+      &__tittle {
+        text-align: start;
+      }
+    }
+  }
+
+  @media screen and (min-width:1200px){
+    .datails-list {
+      --card-list: 4;
+    }
+  }
+  

@@ -1,0 +1,104 @@
+.portfolio__filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 90px;
+
+    &-link:not(:last-child) {
+      margin-right: 8px;
+    }
+
+    &-button {
+      padding: 6px 22px;
+      border: none;
+      background-color: var(--secondary-background-color);
+      font-family: var(--primary-font-family);
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.62;
+      text-align: center;
+      letter-spacing: 0.03em;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background-color var(--transition),
+        color var(--transition), box-shadow var(--transition);
+
+        &:hover,
+        &:focus {
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+          color: var(--primary-color);
+          background-color: var(--accent-color);
+        }
+      }
+      .active-button {
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+          0px 2px 2px rgba(0, 0, 0, 0.12);
+        color: var(--primary-color);
+        background-color: var(--accent-color);
+      }
+  }
+  
+     
+  .portfolio__link {
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow var(--transition);
+height: 100%;
+    &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  }
+  
+  
+  .portfolio__wrapper {
+    padding: 20px 24px;
+    border: 1px solid #eeeeee;
+    border-top: none;
+  }
+  .portfolio__title {
+    color: var(--title-text-color);
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+  }
+  .portfolio__text {
+    font-size: 16px;
+  }
+  .portfolio__img-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .portfolio__filter {
+      flex-wrap: wrap;
+      align-content: space-between;
+      height: 90px;
+      justify-content: start;
+    }
+
+    @media screen and (max-width: 399px) {
+      .portfolio__filter {
+        height: 140px;
+      }
+    }
+    .portfolio__item:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+.portfolio__item {
+  --card-list: 2;
+}
+
+.portfolio__wrapper {
+  flex-grow: 1;
+}
+  }

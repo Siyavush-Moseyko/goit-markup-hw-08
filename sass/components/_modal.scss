@@ -1,0 +1,50 @@
+.modal{
+    width: 95%;
+    padding: 40px;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform var(--transition);
+
+  }
+
+  @media screen and (min-width: 480px) {
+    .modal {
+      width: 450px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .modal {
+      width: 528px;
+    }
+  }
+
+ .backdrop.is-hidden .modal {
+   transform: translate(-50%,-50%) scale(0) rotate(90deg);
+ }
+  .modal-btn {
+       width: 30px;
+       height: 30px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   cursor: pointer;
+   border-radius: 50%;
+   background-color: var(--primary-color);
+   padding: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+&:hover , 
+&:focus {
+  color: var(--accent-color);
+ }
+  }
+ .modal-close-btn{
+   fill: currentColor;
+ }
+ 

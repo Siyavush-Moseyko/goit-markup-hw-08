@@ -1,0 +1,16 @@
+@media screen and (min-width:768px) {
+  .card-set {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(var(--card-gap) * -1);
+    margin-top: calc(var(--card-gap) * -1);
+
+    &__list {
+      flex-basis: calc(100% / var(--card-list) - var(--card-gap));
+      margin-left: var(--card-gap);
+      margin-top: var(--card-gap);
+    }
+  }
+}
+
+ 
