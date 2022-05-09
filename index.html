@@ -56,7 +56,7 @@
         </ul>
       </div>
 <div class="mobile-menu" data-menu>
-  <div class="mobile-menu__container container">
+  <div class="mobile-menu__container">
     <ul class="mobile-menu__list list">
       <li class="mobile-menu__item">
         <a href="" class="mobile-menu__link link active-link">Студия</a>
@@ -68,28 +68,30 @@
         <a href="" class="mobile-menu__link link">Контакты</a>
       </li>
     </ul>
-    <ul class="mobile-menu__contact-list list">
-      <li class="mobile-menu__contact-item">
-        <a href="tel:+380961111111" class="mobile-menu__contact-link link">+38 096 111 11 11</a>
-      </li>
-      <li class="mobile-menu__contact-item">
-        <a href="" class="mobile-menu__contact-link link">info@devstudio.com</a>
-      </li>
-    </ul>
-    <ul class="mobile-menu__social-list list">
-      <li class="mobile-menu__social-item">
-        <a href="" class="mobile-menu__social-link link">Instagram</a>
-      </li>
-      <li class="mobile-menu__social-item">
-        <a href="" class="mobile-menu__social-link link">Twitter</a>
-      </li>
-      <li class="mobile-menu__social-item">
-        <a href="" class="mobile-menu__social-link link">Facebook</a>
-      </li>
-      <li class="mobile-menu__social-item">
-        <a href="" class="mobile-menu__social-link link">LinkedIn</a>
-      </li>
-    </ul>
+    <div class="mobile-menu__wrapper">
+      <ul class="mobile-menu__contact-list list">
+        <li class="mobile-menu__contact-item">
+          <a href="tel:+380961111111" class="mobile-menu__contact-link link">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-menu__contact-item">
+          <a href="" class="mobile-menu__contact-link link">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="card-set mobile-menu__social-list list">
+        <li class="mobile-menu__social-item card-set__list">
+          <a href="" class="mobile-menu__social-link link">Instagram</a>
+        </li>
+        <li class="mobile-menu__social-item card-set__list">
+          <a href="" class="mobile-menu__social-link link">Twitter</a>
+        </li>
+        <li class="mobile-menu__social-item card-set__list">
+          <a href="" class="mobile-menu__social-link link">Facebook</a>
+        </li>
+        <li class="mobile-menu__social-item card-set__list">
+          <a href="" class="mobile-menu__social-link link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
     <button class="mobile-menu__btn" type="button" data-menu-close>
       <svg class="mobile-menu__close-icon" width="40" height="40">
         <use href="./images/sprite.svg#menu-close"></use>
@@ -590,8 +592,9 @@
               id="checkbox"
             />
             <span class="contact-form__checkbox-icon"></span>
-            Соглашаюсь с рассылкой и принимаю&nbsp;
+            <span>Соглашаюсь с рассылкой и принимаю&nbsp;
             <a href="" class="contact-form__checkbox-link">Условия договора</a>
+          </span>
           </label>
           <button type="submit" class="page-button">Отправить</button>
         </form>

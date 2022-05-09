@@ -6,6 +6,7 @@
 .work {
     &__list {
       position: relative;
+      --card-list:3;
     }
     
     &__description {

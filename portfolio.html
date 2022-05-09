@@ -27,7 +27,7 @@
           <a class="logo link" href="">Web<span class="logo__header_black">Studio</span></a>
           <ul class="list nav-list">
             <li class="nav-list__item"><a class="header-link link" href="./index.html">Студия</a></li>
-            <li class="nav-list__item"><a class="header-link link  active" href="./portfolio.html">Портфолио</a></li>
+            <li class="nav-list__item"><a class="header-link link active" href="./portfolio.html">Портфолио</a></li>
             <li class="nav-list__item"><a class="header-link link" href="">Контакты</a></li>
           </ul>
         </nav>
@@ -56,7 +56,7 @@
         </ul>
       </div>
 <div class="mobile-menu" data-menu>
-  <div class="mobile-menu__container container">
+  <div class="mobile-menu__container">
     <ul class="mobile-menu__list list">
       <li class="mobile-menu__item">
         <a href="./index.html" class="mobile-menu__link link">Студия</a>
@@ -68,28 +68,30 @@
         <a href="" class="mobile-menu__link link">Контакты</a>
       </li>
     </ul>
-    <ul class="mobile-menu__contact-list list">
-      <li class="mobile-menu__contact-item">
-        <a href="tel:+380961111111" class="mobile-menu__contact-link link">+38 096 111 11 11</a>
-      </li>
-      <li class="mobile-menu__contact-item">
-        <a href="" class="mobile-menu__contact-link link">info@devstudio.com</a>
-      </li>
-    </ul>
-    <ul class="mobile-menu__social-list list">
-      <li class="mobile-menu__social-item">
-        <a href="" class="mobile-menu__social-link link">Instagram</a>
-      </li>
-      <li class="mobile-menu__social-item">
-        <a href="" class="mobile-menu__social-link link">Twitter</a>
-      </li>
-      <li class="mobile-menu__social-item">
-        <a href="" class="mobile-menu__social-link link">Facebook</a>
-      </li>
-      <li class="mobile-menu__social-item">
-        <a href="" class="mobile-menu__social-link link">LinkedIn</a>
-      </li>
-    </ul>
+    <div class="mobile-menu__wrapper">
+      <ul class="mobile-menu__contact-list list">
+        <li class="mobile-menu__contact-item">
+          <a href="tel:+380961111111" class="mobile-menu__contact-link link">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-menu__contact-item">
+          <a href="" class="mobile-menu__contact-link link">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="mobile-menu__social-list card-set list">
+        <li class="mobile-menu__social-item card-set__list">
+          <a href="" class="mobile-menu__social-link link">Instagram</a>
+        </li>
+        <li class="mobile-menu__social-item card-set__list">
+          <a href="" class="mobile-menu__social-link link">Twitter</a>
+        </li>
+        <li class="mobile-menu__social-item card-set__list">
+          <a href="" class="mobile-menu__social-link link">Facebook</a>
+        </li>
+        <li class="mobile-menu__social-item card-set__list">
+          <a href="" class="mobile-menu__social-link link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
     <button class="mobile-menu__btn" type="button" data-menu-close>
       <svg class="mobile-menu__close-icon" width="40" height="40">
         <use href="./images/sprite.svg#menu-close"></use>
@@ -102,19 +104,19 @@
       <section class="section">
         <div class="container">
           <ul class="list portfolio__filter">
-            <li class="portfolio__filter-link">
+            <li class="portfolio__filter-item">
               <button class="portfolio__filter-button active-button" type="button">Все</button>
             </li>
-            <li class="portfolio__filter-link">
+            <li class="portfolio__filter-item">
               <button class="portfolio__filter-button" type="button">Веб-сайты</button>
             </li>
-            <li class="portfolio__filter-link">
+            <li class="portfolio__filter-item">
               <button class="portfolio__filter-button" type="button">Приложения</button>
             </li>
-            <li class="portfolio__filter-link">
+            <li class="portfolio__filter-item">
               <button class="portfolio__filter-button" type="button">Дизайн</button>
             </li>
-            <li class="portfolio__filter-link">
+            <li class="portfolio__filter-item">
               <button class="portfolio__filter-button" type="button">Маркетинг</button>
             </li>
           </ul>

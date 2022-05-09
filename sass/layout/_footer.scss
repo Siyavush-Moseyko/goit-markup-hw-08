@@ -31,10 +31,10 @@
   @media screen and (max-width: 1199px) {
     .footer__contact {
       margin-bottom: 60px;
-    }
 
-    .footer-social__link-wrapper {
-      margin-bottom: 60px;
+      &-wrapper {
+        margin-bottom: 60px;
+      }
     }
   }
   
